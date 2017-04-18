@@ -1,0 +1,46 @@
+<!DOCTYPE Html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Array Sorting Function">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Tejaswi Indroj">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<script>
+  var employees = [   
+    {
+        name: 'Mike',
+        age: 32
+        
+    },
+    {
+
+        name: 'John',
+        age: 25
+        
+    },
+    {            
+        name: 'Emily',
+        age: 36
+        
+    },    
+    {
+        name: 'Peter',
+        age: 40
+		}
+        
+];
+// use slice() to copy the array and not just make a reference
+var age = employees.slice(0);
+age.sort(function myFunction(a,b) {
+    return a.age - b.age;
+});
+console.log('by age:');
+console.log(age);
+
+</script>
+</body>
+</html>
